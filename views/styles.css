@@ -3,6 +3,7 @@ html,body{
     background-color: #F1EFEF;
     margin: 0px;
     scroll-behavior: smooth;
+    background-color: red;
 }
 nav{
     position:fixed;
@@ -14,6 +15,7 @@ nav{
     flex-direction: row;
     border-top:0px; 
     align-items: center;
+    
 }
 nav ul{
     flex-basis: 50%;
@@ -24,25 +26,37 @@ nav ul{
     justify-content: space-evenly;
     align-items: stretch;
 }
-nav input{
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: #CCC8AA;
-    color: #FF6969 ; 
-    border: none;  
-}
 
+li{
+    list-style-type:none; 
+}
+nav h1{
+    padding-right: 50rem;
+}
 .navbut{
-    height: 1.5em;
-    width: 5em;
+    position: relative;
+    height: 100%;
+    width: 8rem;
     text-align: center;
     border-radius: 20px;
     color:#7D7C7C;
     background-color: #CCC8AA;
     transition: background-color 0.3s,color 0.3s;
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .navbut a{
+    position:sticky;
+    height: 100%;
+    width: 100%;
     color:#7D7C7C;
     transition: color 0.3s;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem;
+    text-align: center;
+    
 }
 .navbut:hover{
     
