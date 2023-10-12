@@ -1,0 +1,84 @@
+html,body{
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #F1EFEF;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+nav{
+    position:fixed;
+    width: 100%;
+    background-color: #CCC8AA;
+    color: #191717   ;   
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-top:0px; 
+    align-items: center;
+}
+nav ul{
+    flex-basis: 50%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+nav input{
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #CCC8AA;
+    color: #FF6969 ; 
+    border: none;  
+}
+
+.navbut{
+    height: 1.5em;
+    width: 5em;
+    text-align: center;
+    border-radius: 20px;
+    color:#7D7C7C;
+    background-color: #CCC8AA;
+    transition: background-color 0.3s,color 0.3s;
+}
+.navbut a{
+    color:#7D7C7C;
+    transition: color 0.3s;
+}
+.navbut:hover{
+    
+    background-color: #7D7C7C;
+}
+.navbut a:hover{
+    color:#F1EFEF;
+}
+.home{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.intro{
+    text-align: center;
+    width:50%;
+}
+.photo img {
+    background-color: red;
+    height: 500;
+    width:500;
+}
+.about{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+.content{
+    text-align: center;
+}
