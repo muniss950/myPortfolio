@@ -30,15 +30,17 @@ li{
     list-style-type:none; 
 }
 nav h1{
+    color:#9A4444;
     padding-right: 50rem;
 }
 .navbut{
+    font-weight: bold;
     position: relative;
     height: 100%;
     width: 8rem;
     text-align: center;
     border-radius: 20px;
-    color:#7D7C7C;
+    color:#9A4444;
     background-color: #CCC8AA;
     transition: background-color 0.3s,color 0.3s;
    
@@ -50,7 +52,7 @@ nav h1{
     position:sticky;
     height: 100%;
     width: 100%;
-    color:#7D7C7C;
+    color:#9A4444;
     transition: color 0.3s;
     overflow: hidden;
     padding: 1rem 1rem 1rem;
@@ -69,6 +71,59 @@ nav h1{
     display: flex;
     justify-content: center;
     align-items:center;
+    gap:10px;
+}
+.home .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.home h2{ 
+    color:#9A4444;
+    border-bottom: 1px solid #9A4444;
+}
+.home .content .below-cont{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.home .content .below-cont .container{
+    border:1px solid #9A4444;
+}
+.projects{
+    height:100%;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 4px;
+}
+.projects::-webkit-scrollbar {
+    width: 200px; /* Set the width of the scrollbar track */
+  }
+
+  /* Style the scrollbar thumb */
+.projects::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 5px; /* Set the color of the scrollbar thumb */
+  }
+.project {
+    
+    max-width: 100%;
+    height: 200px;
+    width: 400px;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.project a{
+    height: 100%;
+    width: 100%;
 }
 .intro{
     text-align: center;
@@ -81,17 +136,41 @@ nav h1{
 }
 .about{
     display: flex;
+    flex-direction: column;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    background-color: #DE8F5F;
+    padding: 0px 100px 0px 100px;
 }
-
+.about .content{
+    color:#F1EFEF;
+    text-align: center;
+}
 .contact{
+    background-color: #D6D46D;
+    display: flex;
+    flex-direction: column;
     display: flex;
     height: 100%;
-    align-items: center;
-    justify-content: center; 
+    justify-content: space-around; 
+    padding: 0px 100px 0px 100px;
 }
-.content{
-    text-align: center;
+
+.contact .content{
+    color: #9A4444;
+}
+.about h2{ 
+    color:#F1EFEF;
+    border-bottom: 1px solid #F1EFEF;
+}
+.contact h2{ 
+    color:#9A4444;
+    border-bottom: 1px solid #9A4444;
+}
+.svg{
+    height: 2rem;
+    width: 2rem;
+}
+.projects{
+
 }
